@@ -1,0 +1,13 @@
+{
+  "name": "complisec",
+  "owner": {
+    "name": "Eye Security"
+  },
+  "plugins": [
+    {
+      "name": "complisec",
+      "source": ".",
+      "description": "EU compliance enforcement for AI agents — NIS2, GDPR, ISO 27001"
+    }
+  ]
+}
