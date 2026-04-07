@@ -1,9 +1,10 @@
 # complisec
-.compliance/profile.json
-.compliance/audit.log
-.compliance/incidents/
-.compliance/changes/
-.compliance/vendors/
+**/compliance/profile.json
+**/.compliance/profile.json
+**/.compliance/audit.log
+**/.compliance/incidents/
+**/.compliance/changes/
+**/.compliance/vendors/
 complisec-skill.zip
 .env
 *.pyc

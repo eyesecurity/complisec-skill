@@ -20,8 +20,7 @@ jobs:
             SKILL.md \
             AGENTS.md \
             .claude-plugin/ \
-            skills/ \
-            .compliance/profile.example.json \
+            plugins/ \
             -x '*/.DS_Store'
 
       - name: Create release

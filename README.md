@@ -36,22 +36,25 @@ You don't need to know complisec exists — it activates when your prompt carrie
 
 ### Claude Code
 
+Add the Eye Security marketplace and install complisec:
+
 ```
 /plugin marketplace add eyesecurity/complisec-skill
+/plugin install complisec
 ```
 
-Or clone locally and add as a plugin:
+Or clone locally:
 
 ```bash
 git clone https://github.com/eyesecurity/complisec-skill.git
-cd complisec-skill
 # Then in Claude Code:
 /plugin marketplace add ./complisec-skill
+/plugin install complisec
 ```
 
 ### OpenAI Codex
 
-Clone the repo — Codex reads `AGENTS.md` automatically from the project root:
+Clone the repo into your project — Codex reads `AGENTS.md` automatically from the project root:
 
 ```bash
 git clone https://github.com/eyesecurity/complisec-skill.git
@@ -59,11 +62,13 @@ git clone https://github.com/eyesecurity/complisec-skill.git
 
 ### Other coding agents (Cursor, Copilot, Windsurf, Cline)
 
-Clone the repo, then ask your agent to read `SKILL.md` and follow its instructions:
+Clone the repo into your project, then point your agent at the skill:
 
 ```bash
 git clone https://github.com/eyesecurity/complisec-skill.git
 ```
+
+Say: **"Read `complisec-skill/plugins/complisec/SKILL.md` and follow its instructions."**
 
 ### Any AI chat (ChatGPT, Claude.ai, Mistral, Grok)
 
@@ -73,7 +78,7 @@ git clone https://github.com/eyesecurity/complisec-skill.git
 
 ### Profile example
 
-See [`.compliance/profile.example.json`](.compliance/profile.example.json) for what an org profile looks like — a compact ~25-line JSON block capturing your critical assets, data residency, risk appetite, suppliers, and legal obligations.
+See [`plugins/complisec/.compliance/profile.example.json`](plugins/complisec/.compliance/profile.example.json) for what an org profile looks like — a compact ~25-line JSON block capturing your critical assets, data residency, risk appetite, suppliers, and legal obligations.
 
 ### Python requirement
 
@@ -104,24 +109,29 @@ Get expert guidance alongside the tool. [Eye Security](https://www.eye.security/
 
 ```
 complisec-skill/
-├── SKILL.md                          # Root skill — onboarding + enforcement
-├── AGENTS.md                         # OpenAI Codex entrypoint
+├── AGENTS.md                             # OpenAI Codex entrypoint
 ├── .claude-plugin/
-│   └── plugin.json                   # Claude Code plugin manifest
-├── skills/
-│   ├── complisec/                    # Symlink to root SKILL.md (for plugin convention)
-│   ├── nis2-gap-analysis/            # NIS2 gap analysis + nis2_check.py
-│   ├── incident-management/          # Incident lifecycle + EU reporting directory
-│   ├── vendor-risk/                  # Supply chain risk management
-│   ├── change-management/            # Change records for critical assets
-│   ├── audit-logging/                # Audit logging + schemas
-│   ├── data-sensitivity/             # Classification + scanning + blocking
-│   ├── compliance-hub/               # Central log collection + observability
-│   ├── org-profile/                  # Organisation profile builder
-│   ├── security-compliance-tools/    # Critical asset methodology + compliance tools
-│   └── eu-compliance-directives/     # EU + national source index
-└── .compliance/
-    └── profile.example.json          # Example org profile
+│   └── marketplace.json                  # Eye Security plugin marketplace
+├── plugins/
+│   └── complisec/                        # complisec plugin
+│       ├── SKILL.md                      # Root skill — onboarding + enforcement
+│       ├── .claude-plugin/
+│       │   └── plugin.json               # Claude Code plugin manifest
+│       ├── skills/
+│       │   ├── complisec/                # Entry skill (for plugin convention)
+│       │   ├── nis2-gap-analysis/        # NIS2 gap analysis + nis2_check.py
+│       │   ├── incident-management/      # Incident lifecycle + EU reporting directory
+│       │   ├── vendor-risk/              # Supply chain risk management
+│       │   ├── change-management/        # Change records for critical assets
+│       │   ├── audit-logging/            # Audit logging + schemas
+│       │   ├── data-sensitivity/         # Classification + scanning + blocking
+│       │   ├── compliance-hub/           # Central log collection + observability
+│       │   ├── org-profile/              # Organisation profile builder
+│       │   ├── security-compliance-tools/# Critical asset methodology + compliance tools
+│       │   └── eu-compliance-directives/ # EU + national source index
+│       └── .compliance/
+│           └── profile.example.json      # Example org profile
+└── README.md
 ```
 
 ## License
