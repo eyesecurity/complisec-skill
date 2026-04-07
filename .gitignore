@@ -5,7 +5,7 @@
 **/.compliance/incidents/
 **/.compliance/changes/
 **/.compliance/vendors/
-complisec-skill.zip
+*.zip
 .env
 *.pyc
 __pycache__/

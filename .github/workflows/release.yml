@@ -14,17 +14,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build skill zip
+      - name: Build plugin zips
         run: |
-          zip -r eyesecurity-complisec-skill.zip \
-            SKILL.md \
-            AGENTS.md \
-            .claude-plugin/ \
-            plugins/ \
-            -x '*/.DS_Store'
+          # Each plugin gets its own self-contained zip with SKILL.md at root
+          for plugin_dir in plugins/*/; do
+            plugin_name=$(basename "$plugin_dir")
+            (cd "$plugin_dir" && zip -r "../../${plugin_name}.zip" . -x '*/.DS_Store')
+          done
 
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          files: eyesecurity-complisec-skill.zip
+          files: "*.zip"
           generate_release_notes: true

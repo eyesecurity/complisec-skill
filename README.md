@@ -39,16 +39,16 @@ You don't need to know complisec exists — it activates when your prompt carrie
 Add the Eye Security marketplace and install complisec:
 
 ```
-/plugin marketplace add eyesecurity/complisec-skill
+/plugin marketplace add eyesecurity/skills
 /plugin install complisec
 ```
 
 Or clone locally:
 
 ```bash
-git clone https://github.com/eyesecurity/complisec-skill.git
+git clone https://github.com/eyesecurity/skills.git
 # Then in Claude Code:
-/plugin marketplace add ./complisec-skill
+/plugin marketplace add ./skills
 /plugin install complisec
 ```
 
@@ -57,7 +57,7 @@ git clone https://github.com/eyesecurity/complisec-skill.git
 Clone the repo into your project — Codex reads `AGENTS.md` automatically from the project root:
 
 ```bash
-git clone https://github.com/eyesecurity/complisec-skill.git
+git clone https://github.com/eyesecurity/skills.git
 ```
 
 ### Other coding agents (Cursor, Copilot, Windsurf, Cline)
@@ -65,14 +65,14 @@ git clone https://github.com/eyesecurity/complisec-skill.git
 Clone the repo into your project, then point your agent at the skill:
 
 ```bash
-git clone https://github.com/eyesecurity/complisec-skill.git
+git clone https://github.com/eyesecurity/skills.git
 ```
 
-Say: **"Read `complisec-skill/plugins/complisec/SKILL.md` and follow its instructions."**
+Say: **"Read `skills/plugins/complisec/SKILL.md` and follow its instructions."**
 
 ### Any AI chat (ChatGPT, Claude.ai, Mistral, Grok)
 
-1. Download [eyesecurity-complisec-skill.zip](https://github.com/eyesecurity/complisec-skill/releases/latest/download/eyesecurity-complisec-skill.zip)
+1. Download [complisec.zip](https://github.com/eyesecurity/skills/releases/latest/download/complisec.zip)
 2. Upload the ZIP to your AI chat
 3. Say: **"Read SKILL.md and follow its instructions."**
 
@@ -108,7 +108,7 @@ Get expert guidance alongside the tool. [Eye Security](https://www.eye.security/
 ## Project structure
 
 ```
-complisec-skill/
+skills/                                       # eyesecurity/skills repo
 ├── AGENTS.md                             # OpenAI Codex entrypoint
 ├── .claude-plugin/
 │   └── marketplace.json                  # Eye Security plugin marketplace
