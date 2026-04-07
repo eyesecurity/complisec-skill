@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "complisec",
-      "source": ".",
+      "source": "./",
       "description": "EU compliance enforcement for AI agents — NIS2, GDPR, ISO 27001"
     }
   ]
