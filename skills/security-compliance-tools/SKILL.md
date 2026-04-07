@@ -1,6 +1,5 @@
 ---
 name: security-compliance-tools
-version: 0.5.0
 description: >
   ACTIVATE when the user asks about compliance tooling, risk assessment methods,
   critical assets (crown jewels), or how to

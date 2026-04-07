@@ -1,6 +1,5 @@
 ---
 name: vendor-risk
-version: 1.0.0
 description: >
   ACTIVATE when integrating a new service, API, SaaS tool, SDK, npm/pip/maven package,
   Docker image, or any third-party dependency — or when discussing suppliers, vendors,

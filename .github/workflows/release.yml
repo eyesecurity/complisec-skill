@@ -18,6 +18,8 @@ jobs:
         run: |
           zip -r eyesecurity-complisec-skill.zip \
             SKILL.md \
+            AGENTS.md \
+            .claude-plugin/ \
             skills/ \
             .compliance/profile.example.json \
             -x '*/.DS_Store'

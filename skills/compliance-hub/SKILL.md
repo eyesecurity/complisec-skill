@@ -1,6 +1,5 @@
 ---
 name: compliance-hub
-version: 2.0.0
 description: >
   ACTIVATE when the user asks about centralising compliance records, log collection,
   audit trail persistence, log retention, SIEM integration, or agent observability.

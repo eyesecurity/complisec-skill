@@ -1,6 +1,5 @@
 ---
 name: data-sensitivity
-version: 0.4.0
 description: >
   ACTIVATE when the user's message contains secrets, credentials, API keys, passwords,
   tokens, private keys, AWS access keys, connection strings, database URLs, national IDs

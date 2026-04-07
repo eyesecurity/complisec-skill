@@ -1,6 +1,5 @@
 ---
 name: org-profile
-version: 2.0.0
 argument-hint: "[setup]"
 description: "ACTIVATE when the user wants to create or update their organisation's compliance profile, or invokes /org-profile setup. Runs a questionnaire to capture identity, critical assets, data residency, risk appetite, suppliers, and legal obligations — outputs a compact profile for enforcement."
 ---

@@ -1,6 +1,5 @@
 ---
 name: incident-management
-version: 1.0.0
 description: >
   ACTIVATE when a security incident, data breach, outage, or suspicious event is
   reported, discussed, or detected. Guides structured incident documentation through

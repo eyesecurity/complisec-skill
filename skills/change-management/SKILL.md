@@ -1,6 +1,5 @@
 ---
 name: change-management
-version: 1.0.0
 description: >
   ACTIVATE when making changes that affect critical assets: deployments, database
   migrations, schema changes, Terraform/IaC modifications, access control or IAM

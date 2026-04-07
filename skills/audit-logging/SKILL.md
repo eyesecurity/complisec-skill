@@ -1,6 +1,5 @@
 ---
 name: audit-logging
-version: 0.4.0
 description: >
   ACTIVATE on ANY request that involves writing, generating, reviewing, modifying,
   or outputting source code in any programming language — Python, JavaScript,

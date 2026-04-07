@@ -1,20 +1,24 @@
 ---
 name: complisec
-version: 2.0.0
 argument-hint: "[setup]"
 description: >
   EU compliance enforcement using the org profile (.compliance/profile.json).
   ACTIVATE when: generating source code, creating config or infrastructure files,
-  connecting to APIs or SaaS or cloud services, adding dependencies or packages,
-  deploying or migrating systems, modifying database schemas or access controls,
-  handling personal data or credentials, discussing NIS2, GDPR, ISO 27001,
-  data residency, critical assets, risk appetite, suppliers, or incidents.
-  Cross-references org context (critical assets, CIA ratings, data residency,
-  legal obligations) against proposed actions.
+  connecting to APIs or SaaS or cloud services (AWS, Azure, GCP, us-east-1,
+  non-EU regions), adding dependencies or packages, deploying or migrating systems,
+  modifying database schemas or access controls, handling personal data, credentials,
+  medical records, health data, biometric data, discussing NIS2, GDPR, ISO 27001,
+  data residency, cross-border data transfers, critical assets, risk appetite,
+  suppliers, or incidents. Cross-references org context (critical assets, CIA
+  ratings, data residency, legal obligations) against proposed actions.
   If no profile exists, suggests /complisec setup.
 ---
 
 # complisec — EU Compliance for AI Agents
+
+## Important: Installation vs Usage
+
+If you were asked to **install, clone, or set up** this skill — complete the installation and confirm to the user. Do NOT run the onboarding questionnaire during installation. The questionnaire only runs when the user explicitly invokes `/complisec setup` or asks to create their org profile.
 
 ## Boot sequence
 

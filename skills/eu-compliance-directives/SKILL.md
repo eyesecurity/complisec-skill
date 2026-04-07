@@ -1,6 +1,5 @@
 ---
 name: eu-compliance-directives
-version: 1.0.0
 description: >
   Curated index of official EU and national (member state) compliance sources,
   including directives, transposition laws, and regulatory guidance. ACTIVATE

@@ -1,17 +1,16 @@
 ---
 name: nis2-gap-analysis
-version: 1.0.0
 description: >
   ACTIVATE when the user asks about NIS2, Cyberbeveiligingswet (Cbw), NIS2 applicability,
   NIS2 gap analysis, or NIS2 compliance assessment. Interview-driven gap analysis with
   5-level maturity scoring field-tested by security consultants.
-requires:
-  bins: [python3]
 ---
 
 # NIS2 Gap Analysis
 
 > Interview-driven, not knowledge-dump. Score on 5 levels. Probe for evidence, not self-assessment.
+
+**Requires**: Python 3.10+ for the applicability pre-screen script (`nis2_check.py`). The gap analysis interview itself is pure conversation — no dependencies.
 
 ## 1. Applicability pre-screen
 
